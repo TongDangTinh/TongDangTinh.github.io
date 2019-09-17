@@ -1,0 +1,354 @@
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/*img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}*/
+
+
+/* Typography */
+
+h1,
+h2,
+h3 {
+  font-family: 'Lori', serif;
+  font-weight: 400;
+  color: #143774;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.subtitle {
+  font-weight: 700;
+  color: #1792d2;
+  font-size: .75rem;
+  margin: 0;
+}
+
+
+/* Layout */
+
+.container {
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.container-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container-flex-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+
+.container-flex-main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.main {
+  width: 75%;
+}
+
+.sidebar {
+  width: 20%;
+}
+
+.vietnam{
+  margin-right: 15px;
+}
+
+.article-recent {
+  padding: 10px;
+  margin-top: 30px;
+}
+header {
+  background: #f8f8f8;
+  padding: 2em 0;
+}
+
+footer {
+  background: rgb(72, 231, 219);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+  margin-left: 2em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #707070;
+  font-weight: 700;
+  padding: .25rem 0;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #1792d2;
+}
+
+.current-page {
+  border-bottom: 1px solid #707070;
+}
+
+.current-page:hover {
+  color: #707070;
+}
+
+.ariticle-image {
+  width: 100;
+  height: 150px;
+  object-fit: cover;
+}
+.article-recent-main {
+  opacity: 1;
+}
+
+.article-recent-main:hover img {
+  opacity: 0.5;
+}
+
+.article-read-more {
+  color: #1792d2;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.article-read-more:hover,
+.article-read-more:focus {
+  color: #143774;
+  text-decoration: underline;
+}
+
+.article-title {
+  padding-bottom: 10px;
+}
+
+.article-body {
+  text-decoration: none;
+  color: #707070;
+}
+.article-body:hover,
+.article-body:focus {
+  color: #143774;
+}
+
+
+
+/* Widgets */
+
+.sidebar-widget {
+  border: 20px solid#efefef;
+  margin-bottom: 2em;
+  padding: 1em;
+}
+
+
+.widget-recent-post {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #707070;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+}
+
+.widget-recent-post:last-child {
+  border: 0;
+  margin: 0;
+}
+/*.widget-image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}*/
+
+img {
+  with:100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.widget-image:hover {
+  transform: scale(1.5);
+}
+
+.widget-title{
+   text-align: center;
+   border-bottom: 2px dotted green;
+}
+
+.widget-recent-post-title {
+  text-align: center;
+  font-size: 17px;
+}
+
+/*About*/
+.thoi-tien-su {
+  display: flex;
+  flex-direction: row;
+  /*border: 1px solid green;*/
+}
+.text {
+   margin-left: 15px;
+}
+
+.trong-dong{
+  margin-top: 27px;
+
+}
+
+
+/* Hà Nội */
+
+.container-item {
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.box-contain-background-hanoi {
+  min-height: 350px;
+  background-image: url(images/01-hanoi.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-overlay-hanoi{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.box-container-title-hanoi {
+  position: absolute;
+  color: pink;
+  text-align: center;
+  animation-name: box-content;
+  animation-duration: 0.5s;
+}
+.box-title {
+  color: yellow;
+}
+
+@keyframes box-content {
+  from{left: -100%;}
+  to{left: 0; }
+}
+
+.container-flex-content{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.article-main {
+  display: flex;
+  flex-direction: row;
+}
+
+.article-content {
+  padding: 0 15px;
+
+}
+.article-image {
+  width: 250px;
+  height: 300px;
+  margin-top: 15px;
+  object-fit: cover;
+}
+
+.article-content-title {
+  font-size: 13px;
+  text-align: center;
+}
+
+/*Hải Phòng*/
+
+.box-contain-background-haiphong{
+  background-image: url(images/phuongvi.jpg);
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.box-container-title-haiphong {
+  position: absolute;
+  color: green;
+  animation-name: box-haiphong;
+  /*animation-duration: 5s;*/
+  animation: box-haiphong 5s infinite;
+}
+
+@keyframes box-haiphong {
+  0% {left: 0px; top: 0px}
+  25% {left:450px; top: 0px;}
+  50% {left: 450px; top: 450px;}
+  100% {left: 0px; top: 450Px}
+}
+
+/*.box-text-haiphong {
+  position: absolute;
+  text-align: center;
+  margin-top: 200px;
+  color: black;
+}*/
+
+.text {
+  margin: 30px auto;
+  border-bottom: 1px dotted green;
+}
+
+/*Đà Nẵng*/
+
+.box-contain-background-danang {
+  background-image: url(images/da-nang.jpeg);
+  height: 365px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-container-title-danang {
+  position: absolute;
+}
+
+.box-title-danang {
+  color: rgb(0, 235, 115);
+  text-align: center;
+  font-size: 20px;
+  font-family: fantasy;
+}

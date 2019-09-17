@@ -1,0 +1,288 @@
+
+/*Header*/
+.header {
+  position: relative;
+  background-image: url(https://ppp.tphcm.gov.vn/en/images/banner10.jpg);
+  display: flex;
+  flex-flow: row wrap;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  align-content: space-around;
+}
+
+.header img { 
+/*  position: relative;*/
+}
+
+.header h1 {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  color: rgb(191, 255, 0);
+  background-color: #00000059;
+}
+
+/*.flex-container {
+
+  position: absolute;*/
+  /*display: flex;*/
+  /*justify-content: space-around;*/
+
+.hanoi-01 {
+  background-color: #9e9e9e00;
+  color: white;
+  padding: 14px;
+  margin: 2px;
+}
+
+.haiphong-02 {
+  background-color: #00cc96;
+  color: white;
+  padding: 14px;
+  margin: 2px;
+}
+
+.danang-03 {
+  background-color: #00cc96;
+  color: white;
+  padding: 14px;
+  margin: 2px;
+}
+
+.hcm-04 {
+  background-color: #00cc96;
+  color: white;
+  padding: 14px;
+  margin: 2px;
+}
+.cantho-05 {
+  background-color: #00cc96;
+  color: white;
+  padding: 14px;
+  margin: 2px;
+}
+
+.bentre-06 {
+  background-color: #00cc96;
+  color: white;
+  padding: 14px;
+  margin: 2px;
+}
+
+.buonmethuot-07 {
+  background-color: #00cc96;
+  color: white;
+  padding: 14px;
+  margin: 2px;
+}
+
+.nhatrang-08 {
+  background-color: #00cc96;
+  color: white;
+  padding: 14px;
+  margin: 2px;
+}
+.dalat-09 {
+  background-color: #00cc96;
+  color: white;
+  padding: 14px;
+  margin: 2px;
+}
+
+.sonla-10 {
+  background-color: #00cc96;
+  color: white;
+  padding: 14px;
+  margin: 2px;
+}
+
+.hagiang-11 {
+  background-color: #00cc96;
+  color: white;
+  padding: 14px;
+  margin: 2px;
+}
+
+.campha-12 {
+  background-color: #00cc96;
+  color: white;
+  padding: 14px;
+  margin: 2px;
+}
+
+.thuathien-hue-13 {
+  background-color: #00cc96;
+  color: white;
+  padding: 14px;
+  margin: 2px;
+}
+
+.camranh-14 {
+  background-color: #00cc96;
+  color: white;
+  padding: 14px;
+  margin: 2px;
+}
+
+.phanrang-15 {
+  background-color: #00cc96;
+  color: white;
+  padding: 14px;
+  margin: 2px;
+}
+
+.baclieu-16 {
+  background-color: #00cc96;
+  color: white;
+  padding: 14px;
+  margin: 2px;
+}
+
+
+/*Navbar*/
+.navbar {
+  width: 100%;
+  position: sticky;
+  height: 60px;
+  top: 0;
+  background-color: rgb(140, 115, 115);
+}
+.navbar ul {
+  list-style-type: none;
+  height: 100%;
+  margin: 0;
+}
+
+.navbar ul li {
+  line-height: 60px;
+  float: right;
+  
+  padding: 0 40px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: rgb(128, 255, 0);
+}
+.navbar ul li a:hover {
+  color: #ffbf00;
+}
+
+.navbar::after {
+  content: "";
+  clear: left;
+  display: table;
+}
+
+/*Container*/
+.container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+
+}
+
+/*Menu content*/
+.menu-content {
+   border: 3px solid green;
+   margin-top: 20px;
+
+   /*position: sticky;
+   height: 420px;
+   top: 200px;
+   background-color: #9ee600;*/
+
+}
+
+.menu-content ul li {
+  list-style-type: none;
+
+}
+
+.menu-content-item a {
+  text-decoration: none;
+  font-size: 20px;
+  color: blue;
+  
+}
+
+
+
+.menu-content-item a:hover {
+   color: green;
+   font-size: 25px;
+}
+
+/*img content*/
+
+.img-content {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto auto;
+  margin-top: 20px;
+  margin-left: 20px;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+
+.img-content-block {
+	text-align: center;
+	text-decoration: none;
+	font-size: 20px;	
+}
+
+.img-content-block:hover {
+	text-align: center;
+	text-decoration: none;
+	color: orange;	
+}
+
+.img-content-block a {
+	text-decoration: none;
+}
+
+.img-content-block a:hover {
+	color: #009e73;
+}
+
+.img-content-block a img {
+  width: 250px;
+  height: 150px;
+}
+.img-content-block a img:hover {
+  width: 250px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+/*Footer*/
+.footer-flex-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footer-flex-container > div {
+  background-color: #f1f1f1;
+  width: 400px;
+  margin: 10px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.footer-lelf ul {
+	list-style-type: none;
+}
+
+/*About.html*/
+.about-content {
+  margin-left: 20px;
+}
+
+/*About*/
+.about-content p {
+  
+}
+.atag {
+  text-decoration: none;
+}
