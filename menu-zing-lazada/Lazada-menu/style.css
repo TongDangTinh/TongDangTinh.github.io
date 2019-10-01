@@ -1,0 +1,97 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  cursor: pointer;
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
+  
+}
+
+.menu-link {
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 25px;
+  color: #757575;
+  display: block;
+}
+
+.menu-link:hover {
+  color: orange;
+}
+
+.sub-items {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  display: none;
+  padding-left: 210px;
+  margin-top: -25px;
+}
+
+.menu-items:hover .sub-items {
+  display: flex;
+  color: #f36d00;
+}
+
+.sub-items-items {
+	width: 200px;
+}
+
+.sub-items-thietbi {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  display: none;
+  padding-left: 200px;
+  margin-top: -75px;
+
+}
+.sub-items-items:hover .sub-items-thietbi {
+	display: flex;
+}
+
+.sub-maytinhban {
+  margin-top: -100px;
+}
+
+.sub-amthanh {
+  margin-top: -125px;
+}
+
+.sub-camera {
+  margin-top: -150px;
+}
+
+.sub-kythuatso {
+  margin-top: -175px;
+}
+
+.sub-mayquay {
+  margin-top: -200px;
+}
+
+.sub-mayin {
+  margin-top: -250px;
+}
+
+.sub-dongho {
+  margin-top: -275px;
+}
+
+.sub-maychoigame {
+  margin-top: -300px;
+}
+
+/*.sub-menu {
+  display: flex;
+  flex-direction: column;
+}*/

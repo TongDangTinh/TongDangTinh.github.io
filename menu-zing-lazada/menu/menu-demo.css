@@ -1,0 +1,69 @@
+/*GLobal CSS*/
+*{
+	box-sizing: border-box;
+}
+
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+	/*border-bottom: 1px solid #dbdbdbdb;*/
+}
+/*Nabar CSS*/
+nav {
+   background-color: #dbdbdbdb;
+   height: 70px;
+}
+
+/*nav > ul: Phần tử con trực tiêp*/
+nav > ul {
+	display: flex;
+	margin: 0;
+	line-height: 70px;
+	/*justify-content: center;*/
+}
+
+
+nav > ul > li {
+	padding: 0 16px;
+
+}
+
+nav >ul >li >a {
+	display: inline-block;
+	transition: all 0.5s ease-in-line;
+}
+
+nav>ul>li:hover {
+	border-bottom: 1px solid #65509e;
+}
+
+.sub-menu {
+	display: flex;
+	position: absolute;
+	flex-direction: row;
+	width: 80%;
+	box-shadow: 0 1px 5px 0 rgba(0,0,0,.2);
+	padding: 10px;
+	display: none; 
+}
+
+.sub-menu > ul {
+	width: calc(100%/4);
+	/*font-size: weight;*/
+}
+
+nav > ul > li:hover .sub-menu {
+	display: flex;
+}

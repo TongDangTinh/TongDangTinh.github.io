@@ -127,6 +127,11 @@ nav a:focus {
 .article-recent-main {
   opacity: 1;
 }
+.article-recent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
 .article-recent-main:hover img {
   opacity: 0.5;
