@@ -1,0 +1,42 @@
+.container {
+	background-color: brown;
+	display: grid; 
+	/*grid-template-columns: 100px 200px 100px; */
+	/*grid-template-columns: 20% 50% 30%;*/
+
+	grid-template-columns: auto auto auto;  /*Chia auto the noi dung */
+	/*grid-template-columns: 1fr 1fr 1fr; */
+
+	/*grid-template-columns: repeat(3,1fr);*/ /*đang chưa được*/
+
+	/*grid-template-rows: 100px 100px 100px;*/
+	/*grid-auto-rows: 100px;*/
+	/*grid-template-rows: repeat(3, 200px); /*Lap lai 3 lan 200px*/*/
+
+	grid-template-rows: repeat(3,1fr);
+}
+
+.item:nth-child(odd) {
+	background-color: aqua;
+}
+
+.item:nth-child(even) {
+	background-color: brown;
+}
+
+.item:nth-child(1) { /*Cách căn chỉnh gộp hàng và cột*/
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+
+.item:nth-child(5) {
+   border: 1px solid black;
+   grid-column-start: 1;
+   grid-column-end: 3;
+   grid-row-start: 2;
+   grid-row-end: 4;
+}

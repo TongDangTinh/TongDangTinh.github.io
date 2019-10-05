@@ -1,0 +1,38 @@
+/*.wrapper {
+	width: 100px;
+	height: 100px; 
+	background-color: red;
+	transition: background-color 0.4s;
+}
+
+
+.wrapper:hover {
+	background-color: aliceblue;
+	transform: translate(200px);
+
+}*/
+
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.wrapper img {
+  width: 20%;
+  height: 50%;
+  object-fit: cover;
+  transition: transform 1.5s; 
+}
+
+
+.wrapper:hover .img1 {
+	transform: translateX(100%);
+
+}
+
+.wrapper:hover .img2 {
+	transform: translateX(-100%);
+}

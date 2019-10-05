@@ -1,0 +1,107 @@
+
+.box {
+  min-height: 500px;
+  background-image: url(program.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*.box img{
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+}*/
+
+.bg-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.5;
+}
+
+.content {
+	position: absolute;
+	color: white;
+	z-index: 999;
+	text-align: center;
+	animation-name: box-content;
+	animation-duration: 0.5s;
+}
+
+.content a {
+	display: inline-block;
+	padding: 8px 16px;
+	text-decoration: none;
+	background-color: pink;
+}
+
+@keyframes box-content {
+	from{ left: -100%; }
+	to{left: 0}
+}
+
+.main {
+	background-color: #333;
+	height: 400px;
+}
+
+.title {
+	color: white;
+	font-size: 40px;
+	text-align: center;
+	padding-top: 50px;
+}
+
+p {
+	color: white;
+	padding: 30px;
+
+}
+
+.main-1 {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 60px;
+	background-color: green;
+}
+
+.p1 {
+	position: relative;
+	animation-name: p1;
+	animation-duration: 1s;
+}
+
+
+.p2 {
+	position: relative;
+	animation-name: p2;
+	animation-duration: 2s;
+}
+
+@keyframes p1 {
+	from{ left: -100%; }
+	to{left: 0;}
+}
+
+@keyframes p2 {
+	from{right: -100%;}
+	to{right: 0;
+	}
+}
+/*@keyframes box-red {
+	from{ background-color: red; top: 0; left: 0 }
+	to{background-color: green; top: 100px; left: 300px}
+}*/
+
+
+/*@keyframes box-red {
+	0%{background-color: red; top: 0; left: 0;}
+	25%{background-color: blue; top:0; left: 300px}
+	75%{background-color: green; top: 300px; left: 300px;}
+	100%{background-color: pink; top: 300px; left: 0px; }
+}*/

@@ -1,0 +1,118 @@
+/* golobol css */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+   
+    text-decoration: none;
+}
+
+.fas{
+    color: #f36d00;
+    font-size: 20px;
+}
+
+.icon{
+    display: none;
+}
+
+
+/* navbar css */
+
+nav{
+    width: 25%;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,.25)
+}
+
+nav >ul{
+    width: 100%;
+    padding: 0;
+   
+}
+
+nav>ul>li{
+   
+    position: relative;
+}
+
+
+nav>ul>li>a{
+   
+   display: block;
+   padding: 8px 16px;
+}
+
+nav>ul>li:hover .icon{
+    display: block;
+}
+
+nav>ul>li:hover >a{
+    color: #f36d00;
+    background-color: #757575;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.sub-menu>li>a{
+    padding: 8px 16px;
+    display: block;
+
+}
+.sub-menu>li:hover>a{
+    color: #f36d00;
+    background-color: #757575;
+}
+.sub-menu{
+    position: absolute;
+    left: 100%;
+   
+    width: 100%;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,.25);
+    top: 0;
+    padding: 0;
+
+    display: none;
+}
+
+nav>ul>li:hover .sub-menu{
+    display: block;
+}
+
+.sub-menu>li:hover .sub-sub-menu{
+    display: block;
+}
+
+.sub-sub-menu{
+    position: absolute;
+    left: 100%;
+   
+    width: 100%;
+    top: 0;
+    padding: 0;
+    display: none;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,.25);
+
+}
+
+.sub-sub-menu>li>a{
+    display: block;
+    padding: 8px 16px;
+}
+
+.sub-sub-menu>li:hover>a{
+    color: #f36d00;
+    background-color: #757575;
+}

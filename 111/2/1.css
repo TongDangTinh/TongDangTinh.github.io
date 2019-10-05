@@ -1,0 +1,56 @@
+.card {
+	background: #000;
+	color: white;
+	width: 560px;
+	margin: 0 auto;
+	padding: 45px;
+}
+h1, p {
+	margin-top: 0;
+}
+
+h1 {
+	font-size: 24px; 
+	margin-bottom: 1em /*1em = 24px 2em = 48px*/
+}
+
+p {
+	font-size: 18px;
+}
+
+a {
+	color: black;
+}
+
+.button {
+	display: inline-block;
+	background: #FFE600;
+	color: black;
+	/*padding: 15px 30px;*/
+	padding: .5rem 1.25rem;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 50px;
+}
+
+.button:hover {
+	background: orange;
+}
+
+
+.btn-big {
+	font-size: 1.5rem;
+}
+
+.btn-small {
+	font-size: 0.75rem;
+}
+
+.accent-color {
+	color: #FFE600;
+}
+
+.links {
+	margin-top: 0;
+	margin-bottom: 0;
+}

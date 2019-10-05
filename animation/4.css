@@ -1,0 +1,23 @@
+
+.box {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	animation-name: box-red;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+/*@keyframes box-red {
+	from{ background-color: red; top: 0; left: 0 }
+	to{background-color: green; top: 100px; left: 300px}
+}*/
+
+
+@keyframes box-red {
+	0%{background-color: red; top: 0; left: 0;}
+	25%{background-color: blue; top:0; left: 300px}
+	75%{background-color: green; top: 300px; left: 300px;}
+	100%{background-color: pink; top: 300px; left: 0px; }
+}

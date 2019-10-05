@@ -1,0 +1,30 @@
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.wrapper img {
+	width: 50%;
+	height:50%;
+	object-fit: cover;
+	transition: transform 5s; 
+	position: absolute; 
+}
+
+.img1 {
+	opacity: 1;
+}
+
+.img2 {
+	opacity: 0;
+}
+
+.img1:hover {
+   opacity: 0;
+}
+
+.img2:hover {
+  opacity: 1;
+}

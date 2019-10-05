@@ -1,0 +1,38 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.content-right {
+  flex: 70%;
+  height: 400px;
+  background-color: red;
+ margin-right: 15px;
+}
+
+.content-left {
+   width: 400px;
+   height: 400px;
+   
+}
+
+.content-left-top {
+  width: 400px;
+  height: 200px;
+  background-color: green;
+}
+.content-left-botton {
+  width: 400px;
+  height: 200px;
+  background-color: blue;
+}

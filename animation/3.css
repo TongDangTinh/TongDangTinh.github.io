@@ -1,0 +1,25 @@
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100hv;
+
+}
+.wrapper {
+	overflow: hidden;
+	width: 450px;
+	height: 450px;
+}
+
+img {
+	width: 450px;
+	height:450px;
+	object-fit: cover;
+
+
+}
+
+.img1:hover {
+	transform:scale(1.5);
+}
